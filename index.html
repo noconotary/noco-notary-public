@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoCo Notary Public | Northern Colorado Notary Services</title>
+<meta name="description" content="Professional mobile and remote online notary services in Northern Colorado. Serving Loveland, Fort Collins, Windsor and surrounding communities.">
+<style>
+:root{
+  --navy:#17324d;
+  --navy-dark:#102638;
+  --green:#3d7057;
+  --green-dark:#315b47;
+  --sage:#eef5f1;
+  --cream:#fbfcfa;
+  --line:#d9e4df;
+  --text:#334455;
+  --muted:#60717e;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:var(--cream);
+  line-height:1.65;
+}
+header{
+  background:var(--white);
+  padding:18px 5.5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  min-height:132px;
+}
+.logo{width:310px;max-width:48vw;height:auto}
+nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+nav a{
+  color:var(--navy);
+  text-decoration:none;
+  font-weight:700;
+  font-size:15px;
+}
+nav a:hover{color:var(--green-dark)}
+.hero{
+  padding:78px 6% 82px;
+  background:linear-gradient(135deg,#eef6f2 0%,#e6f0eb 100%);
+  text-align:center;
+  border-bottom:1px solid var(--line);
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--navy);
+  font-size:46px;
+  line-height:1.18;
+  margin:0 auto 18px;
+  max-width:900px;
+}
+.hero p{
+  color:var(--navy);
+  font-size:20px;
+  max-width:790px;
+  margin:0 auto 28px;
+}
+.hero-badge{
+  display:inline-block;
+  margin-bottom:18px;
+  padding:7px 14px;
+  border-radius:999px;
+  background:var(--white);
+  color:var(--green-dark);
+  border:1px solid #cbded4;
+  font-size:14px;
+  font-weight:700;
+}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;
+  background:var(--navy);
+  color:var(--white);
+  padding:14px 24px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:700;
+  border:2px solid var(--navy);
+}
+.btn:hover{background:var(--navy-dark);border-color:var(--navy-dark)}
+.btn.secondary{background:var(--white);color:var(--navy);border-color:var(--navy)}
+.btn.secondary:hover{background:#f1f5f3}
+section{padding:58px 6%;max-width:1150px;margin:auto}
+h2{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--navy);
+  font-size:32px;
+  line-height:1.25;
+  margin:0 0 24px;
+}
+.section-intro{max-width:790px;color:var(--muted);font-size:17px}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+}
+.card{
+  background:var(--white);
+  padding:25px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  box-shadow:0 3px 12px rgba(23,50,77,.05);
+}
+.card h3{margin:0 0 9px;color:var(--navy);line-height:1.3}
+.card p{margin:0}
+.why{
+  background:var(--sage);
+  max-width:none;
+}
+.why-inner{max-width:1150px;margin:auto}
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px;
+}
+.trust-item{
+  background:var(--white);
+  padding:22px;
+  border-radius:10px;
+  border:1px solid var(--line);
+}
+.trust-item h3{margin:0 0 7px;color:var(--navy)}
+.trust-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;height:34px;
+  border-radius:50%;
+  background:#e2efe9;
+  color:var(--green-dark);
+  font-weight:700;
+  margin-bottom:10px;
+}
+.spanish{
+  background:var(--white);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  text-align:center;
+}
+.spanish-inner{max-width:900px;margin:auto}
+.spanish-badge{
+  display:inline-block;
+  padding:7px 14px;
+  border-radius:999px;
+  background:#eaf3ef;
+  color:var(--green-dark);
+  font-weight:700;
+  font-size:14px;
+  margin-bottom:13px;
+}
+.spanish h2{margin-bottom:13px}
+.spanish p{max-width:770px;margin:0 auto 16px;font-size:17px}
+.rate{
+  font-size:27px;
+  font-weight:700;
+  color:var(--green-dark);
+  margin-bottom:4px;
+}
+.rate-label{font-size:14px;color:var(--muted)}
+.rate-card{min-height:205px}
+.rate-list{margin:8px 0 0;padding-left:20px}
+.rate-list li{margin:3px 0}
+.note{font-size:14px;color:var(--muted)}
+.area{
+  background:var(--white);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  max-width:none;
+}
+.area-inner{max-width:1150px;margin:auto}
+.area-cities{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:22px;
+}
+.city{
+  padding:9px 14px;
+  border:1px solid #cddbd5;
+  border-radius:999px;
+  background:#f5f9f7;
+  color:var(--navy);
+  font-weight:700;
+  font-size:14px;
+}
+.contact{
+  background:var(--navy);
+  color:var(--white);
+  text-align:center;
+  max-width:none;
+}
+.contact h2{color:var(--white)}
+.contact-inner{max-width:850px;margin:auto}
+.contact a{color:var(--white)}
+.contact .btn{background:var(--white);color:var(--navy);border-color:var(--white);margin:5px}
+.contact .btn.secondary{background:transparent;color:var(--white);border-color:var(--white)}
+footer{background:var(--navy-dark);color:#e7efeb;text-align:center;padding:22px 6%;font-size:14px}
+@media(max-width:760px){
+  header{padding:14px 5%;flex-direction:column;gap:12px;min-height:auto}
+  .logo{width:270px;max-width:82vw}
+  nav{gap:11px 16px;justify-content:center}
+  nav a{font-size:13px}
+  .hero{padding:58px 5% 62px}
+  .hero h1{font-size:34px}
+  .hero p{font-size:18px}
+  section{padding:45px 5%}
+  h2{font-size:28px}
+  .actions{flex-direction:column;align-items:center}
+  .actions .btn{width:min(100%,320px);text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="NoCo_Notary_Public_logo_LARGE.png" alt="NoCo Notary Public logo" class="logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#rates">Rates</a>
+    <a href="#area">Service Area</a>
+    <a href="#spanish">Español</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-badge">Colorado Commissioned Notary Public &nbsp;•&nbsp; Hablamos Español</div>
+  <h1>Professional Notary Services, Wherever You Need Them.</h1>
+  <p>Convenient mobile and remote online notarization serving Northern Colorado with professional, reliable service.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">Request an Appointment</a>
+    <a class="btn secondary" href="tel:+17207018015">Call/Text 720-701-8015</a>
+  </div>
+</section>
+
+<section id="spanish" class="spanish">
+  <div class="spanish-inner">
+    <div class="spanish-badge">Hablamos Español</div>
+    <h2>Servicios de Notaría en Español</h2>
+    <p>Ofrecemos servicios de notaría profesionales y confiables en español para ayudarle a completar sus documentos con mayor comodidad y confianza.</p>
+    <p>Servicios móviles y notarización remota en línea disponibles para clientes en el norte de Colorado. Llámenos o envíenos un mensaje de texto para solicitar una cita.</p>
+    <div class="actions" style="margin-top:22px;">
+      <a class="btn" href="tel:+17207018015">Llamar / Texto: 720-701-8015</a>
+      <a class="btn secondary" href="mailto:noconotarypublic@gmail.com?subject=Solicitud%20de%20cita%20-%20Servicio%20en%20Espa%C3%B1ol">Solicitar una cita</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+<h2>Notary Services</h2>
+<div class="grid">
+<div class="card"><h3>Mobile Notary</h3><p>Convenient in-person notarization at your home, office, facility, or other agreed location.</p></div>
+<div class="card"><h3>Remote Online Notarization</h3><p>Secure online notarization for documents that can be completed remotely, subject to Colorado requirements.</p></div>
+<div class="card"><h3>Business &amp; Professional</h3><p>Notary support for businesses, contractors, professionals, and routine document needs.</p></div>
+<div class="card"><h3>Estate Planning</h3><p>Mobile notary support for wills, trusts, powers of attorney, advance directives, and related documents.</p></div>
+<div class="card"><h3>Senior &amp; Healthcare</h3><p>Professional mobile service for seniors, families, healthcare-related documents, and facility appointments.</p></div>
+<div class="card"><h3>Real Estate &amp; Loan Signing</h3><p>Professional signing support for real estate and loan documents. Contact us for a quote and availability.</p></div>
+</div>
+</section>
+
+<section class="why">
+  <div class="why-inner">
+    <h2>Why Choose NoCo Notary Public?</h2>
+    <div class="trust-grid">
+      <div class="trust-item"><div class="trust-icon">✓</div><h3>Colorado Commissioned</h3><p>Professional notary service from an active Colorado commissioned notary public.</p></div>
+      <div class="trust-item"><div class="trust-icon">⌂</div><h3>Mobile Convenience</h3><p>Appointments can come to your home, office, facility, or another agreed location.</p></div>
+      <div class="trust-item"><div class="trust-icon">◎</div><h3>Remote Online</h3><p>Remote online notarization is available when permitted and eligible.</p></div>
+      <div class="trust-item"><div class="trust-icon">ES</div><h3>Hablamos Español</h3><p>Notary services are available in English and Spanish for added convenience and confidence.</p></div>
+      <div class="trust-item"><div class="trust-icon">$</div><h3>Clear Pricing</h3><p>Notarial fees and travel/service charges are clearly disclosed and itemized as applicable.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="rates">
+  <h2>2026 Rates</h2>
+  <p class="section-intro">Simple, transparent pricing. Notarial fees are subject to Colorado law and applicable requirements.</p>
+  <div class="grid" style="margin-top:24px;">
+    <div class="card rate-card">
+      <h3>Traditional Notarization</h3>
+      <div class="rate">$15</div>
+      <div class="rate-label">per applicable notarial act</div>
+      <p style="margin-top:14px;">Subject to Colorado law.</p>
+    </div>
+    <div class="card rate-card">
+      <h3>Remote Online Notarization</h3>
+      <div class="rate">$25</div>
+      <div class="rate-label">per applicable electronic notarial act</div>
+      <p style="margin-top:14px;">Subject to Colorado law and applicable platform requirements.</p>
+    </div>
+    <div class="card rate-card">
+      <h3>Mobile Travel</h3>
+      <ul class="rate-list">
+        <li><strong>Loveland:</strong> $15</li>
+        <li><strong>Fort Collins:</strong> $25</li>
+        <li><strong>Windsor:</strong> $25</li>
+        <li><strong>Other service areas:</strong> $35</li>
+      </ul>
+      <p style="margin-top:16px;"><strong>Payment accepted:</strong> Credit cards, Venmo, Stripe, and cash.</p>
+    </div>
+    <div class="card rate-card">
+      <h3>Special Appointments</h3>
+      <p>Evening, weekend, rush, emergency, business, estate-planning, loan-signing, and other specialized appointments may have additional charges. Contact us for a quote.</p>
+    </div>
+  </div>
+  <p class="note" style="margin-top:18px;">Notarial fees and travel/service charges are separately disclosed and itemized as applicable.</p>
+</section>
+
+<section id="area" class="area">
+  <div class="area-inner">
+    <h2>Northern Colorado Service Area</h2>
+    <p class="section-intro">Mobile notary services throughout Northern Colorado, with travel pricing based on service location.</p>
+    <div class="area-cities">
+      <span class="city">Loveland</span>
+      <span class="city">Fort Collins</span>
+      <span class="city">Windsor</span>
+      <span class="city">Timnath</span>
+      <span class="city">Severance</span>
+      <span class="city">Johnstown</span>
+      <span class="city">Berthoud</span>
+      <span class="city">Greeley</span>
+      <span class="city">Evans</span>
+      <span class="city">Surrounding Communities</span>
+    </div>
+    <p class="note" style="margin-top:20px;">If you are outside these communities, contact us to confirm availability and travel pricing.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About NoCo Notary Public</h2>
+  <p>NoCo Notary Public provides convenient, professional notary services throughout Northern Colorado. Our goal is simple: make notarization accessible, dependable, and convenient for individuals, families, businesses, professionals, and organizations.</p>
+  <p>Whether you need a mobile appointment at your location or a remote online notarization, we focus on professional service, clear communication, convenient scheduling, and bilingual support.</p>
+  <p><strong>Colorado commissioned notary public.</strong></p>
+  <p class="note">A notary public verifies identity, witnesses signatures, and completes authorized notarial acts. Notaries do not provide legal advice or determine whether a document is legally appropriate for your situation.</p>
+</section>
+
+<section id="contact" class="contact">
+<div class="contact-inner">
+<h2>Schedule a Notary Appointment</h2>
+<p>Call or text <strong>720-701-8015</strong> to request an appointment.</p>
+<p>Email: <a href="mailto:noconotarypublic@gmail.com">noconotarypublic@gmail.com</a></p>
+<div class="actions">
+<a class="btn" href="tel:+17207018015">Call / Text Now</a>
+<a class="btn secondary" href="mailto:noconotarypublic@gmail.com?subject=NoCo%20Notary%20Appointment%20Request&body=Name%3A%0A%0APhone%3A%0A%0ARequested%20date%20and%20time%3A%0A%0ALocation%3A%0A%0AType%20of%20document%2Fservice%3A%0A%0AAdditional%20information%3A">Request by Email</a>
+</div>
+<p class="note" style="color:#dce9e3;margin-top:18px">For faster scheduling, please include the requested date/time, location, and type of notarization.</p>
+</div>
+</section>
+
+<footer>© 2026 NoCo Notary Public. All rights reserved.</footer>
+</body>
+</html>
